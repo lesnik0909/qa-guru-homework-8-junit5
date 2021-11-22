@@ -1,0 +1,12 @@
+Title: Fill the form with fullName and email
+Priority: BLOCKER
+Preconditions: The site https://demoqa.com/text-box was opened
+
+Steps:
+1. Enter the fullName in the "fullName" input field.
+2. Enter the email in the "email" input field.
+3. Click on the "submit" button.
+
+Expected result:
+1. The "name" line displays the entered "fullName".
+2. The "email" line displays the entered "email".
