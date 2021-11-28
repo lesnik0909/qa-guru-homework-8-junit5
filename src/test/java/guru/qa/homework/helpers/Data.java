@@ -2,9 +2,9 @@ package guru.qa.homework.helpers;
 
 public enum Data {
 
-  FIRST("Aurelia Schoen", "talia.lubowitz@hotmail.com"),
-  SECOND("Loris Johnson", "johna.moen@gmail.com"),
-  THIRD("Mervin Rau", "carmina.wunsch@gmail.com");
+  FIRST("Aurelia Schoen", "aurelia.schoen@gmail.com"),
+  SECOND("Loris Johnson", "loris.johnson@gmail.com"),
+  THIRD("Mervin Rau", "mervin.rau@gmail.com");
 
   private final String fullName;
   private final String email;
