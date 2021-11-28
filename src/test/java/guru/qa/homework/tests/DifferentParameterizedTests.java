@@ -24,10 +24,10 @@ public class DifferentParameterizedTests extends BaseTest {
   @ParameterizedTest(name = "Fill the form with fullName \"{0}\"")
   public void valueSourceTest(String fullName) {
     $("#userName").setValue(fullName);
-    $("#userEmail").setValue("talia.lubowitz@hotmail.com");
+    $("#userEmail").setValue("aurelia.schoen@gmail.com");
     $("#submit").click();
     $("#name").shouldHave(text(fullName));
-    $("#email").shouldHave(text("talia.lubowitz@hotmail.com"));
+    $("#email").shouldHave(text("aurelia.schoen@gmail.com"));
   }
 
   @Tag("MethodSource")
@@ -68,7 +68,7 @@ public class DifferentParameterizedTests extends BaseTest {
 
   @Tag("CsvSource")
   @Story("Parameterized test with source 'CsvSource'")
-  @CsvSource({"Aurelia Schoen, talia.lubowitz@hotmail.com", "Loris Johnson, johna.moen@gmail.com", "Mervin Rau, carmina.wunsch@gmail.com"})
+  @CsvSource({"Aurelia Schoen, aurelia.schoen@gmail.com", "Loris Johnson, loris.johnson@gmail.com", "Mervin Rau, mervin.rau@gmail.com"})
   @ParameterizedTest(name = "Fill the form with fullName \"{0}\" and email \"{1}\"")
   public void csvSourceTest(String fullName, String email) {
     $("#userName").setValue(fullName);
